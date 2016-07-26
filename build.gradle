@@ -1,0 +1,23 @@
+apply plugin: 'war'
+sourceCompatibility = 1.7
+
+repositories {
+   mavenCentral()
+}
+
+sourceSets.main.java.srcDir 'src'
+sourceSets.main.resources.srcDir 'src'
+
+webAppDirName = "WebTest"
+
+war.archiveName "Webtest.war"
+
+dependencies {
+  providedCompile fileTree(dir: 'WebContent/WEB-INF/lib', include: '*.jar')
+  providedCompile group: 'org.jboss.spec.javax.faces', name: 'jboss-jsf-api_2.1_spec', version: '2.1.28.1.Final'  
+  providedCompile group: 'org.jboss.spec.javax.ejb', name: 'jboss-ejb-api_3.1_spec', version: '1.0.2.Final'  
+  providedCompile group: 'org.jboss.spec.javax.servlet', name: 'jboss-servlet-api_3.0_spec', version: '1.0.2.Final'  
+  providedCompile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.0-api', version: '1.0.1.Final'
+  providedCompile group: 'javax.inject', name: 'javax.inject', version: '1'
+}
+
