@@ -8,9 +8,9 @@ repositories {
 sourceSets.main.java.srcDir 'src'
 sourceSets.main.resources.srcDir 'src'
 
-webAppDirName = "WebTest"
+webAppDirName = "WebContent"
 
-war.archiveName "Webtest.war"
+war.archiveName "WebTest.war"
 
 dependencies {
   providedCompile fileTree(dir: 'WebContent/WEB-INF/lib', include: '*.jar')
