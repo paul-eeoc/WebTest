@@ -8,10 +8,14 @@ public class webtestservices {
 		System.out.println("webtestservices start");
 		
 		test1();
+		testClosedPortal();
 		System.out.println("webtestservices end");
 	}
 
 	private static void test1() {
+		System.out.println("webtestservices running test1");
+	}
+	private static void testClosedPortal() {
 		System.out.println("webtestservices running test1");
 	}
 
