@@ -8,15 +8,18 @@ public class webtestservices {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("webtestservices start");
-		testTDCS();
+		System.out.println("JWebtestservices start");
 		
 		test1();
-		System.out.println("webtestservices end");
+		testClosedPortal();
+		System.out.println("JWebtestservices end");
 	}
 
 	private static void test1() {
-		System.out.println("webtestservices running test1");
+		System.out.println("JWebtestservices running test1");
+	}
+	private static void testClosedPortal() {
+		System.out.println("JWebtestservices running test1");
 	}
 
 }
