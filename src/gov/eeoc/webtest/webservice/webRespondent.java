@@ -5,14 +5,14 @@ public class webRespondent {
 // new code from another dev
 	
 	public static void main(String[] args) {
-		System.out.println("webRespondent start");
+		System.out.println("WebRespondent start");
 		
 		test1();
-		System.out.println("webRespondent end");
+		System.out.println("WebRespondent end");
 	}
 
 	private static void test1() {
-		System.out.println("webRespondent running test1");
+		System.out.println("WebRespondent running test1");
 	}
 
 }
