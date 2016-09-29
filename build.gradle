@@ -9,9 +9,10 @@ sourceSets.main.java.srcDir 'src'
 sourceSets.main.resources.srcDir 'src'
 
 webAppDirName = "WebContent"
-
-war.archiveName "WebTest.war"
-
+war {
+	archiveName "../WebTest.war"
+	version =  '0.1.0'
+}
 dependencies {
   providedCompile fileTree(dir: 'WebContent/WEB-INF/lib', include: '*.jar')
   providedCompile group: 'org.jboss.spec.javax.faces', name: 'jboss-jsf-api_2.1_spec', version: '2.1.28.1.Final'  
