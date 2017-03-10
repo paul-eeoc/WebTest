@@ -1,5 +1,5 @@
 apply plugin: 'war'
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 
 repositories {
    mavenCentral()
@@ -20,5 +20,7 @@ dependencies {
   providedCompile group: 'org.jboss.spec.javax.servlet', name: 'jboss-servlet-api_3.0_spec', version: '1.0.2.Final'  
   providedCompile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.0-api', version: '1.0.1.Final'
   providedCompile group: 'javax.inject', name: 'javax.inject', version: '1'
+  // https://mvnrepository.com/artifact/org.apache.tika/tika
+  compile group: 'org.apache.tika', name: 'tika', version: '1.13'
 }
 
